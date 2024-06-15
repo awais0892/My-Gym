@@ -18,7 +18,6 @@ module.exports = {
     'react',
   ],
   rules: {
-
     'react/function-component-definition': 0,
     'import/extensions': 0,
     'react/prop-types': 0,
@@ -29,7 +28,6 @@ module.exports = {
       2,
       550,
     ],
-
     'no-multiple-empty-lines': [
       'error',
       {
@@ -78,5 +76,6 @@ module.exports = {
         ],
       },
     ],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',  // Add this line
   },
 };
